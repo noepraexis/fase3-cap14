@@ -1,0 +1,19 @@
+|--- rainfall <= -1.33
+|   |--- class: 15
+|--- rainfall >  -1.33
+|   |--- humidity <= -1.95
+|   |   |--- K <= 0.04
+|   |   |   |--- class: 9
+|   |   |--- K >  0.04
+|   |   |   |--- class: 3
+|   |--- humidity >  -1.95
+|   |   |--- P <= 1.64
+|   |   |   |--- humidity <= -0.03
+|   |   |   |   |--- truncated branch of depth 8
+|   |   |   |--- humidity >  -0.03
+|   |   |   |   |--- truncated branch of depth 13
+|   |   |--- P >  1.64
+|   |   |   |--- humidity <= 0.70
+|   |   |   |   |--- class: 7
+|   |   |   |--- humidity >  0.70
+|   |   |   |   |--- class: 0
